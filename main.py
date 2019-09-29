@@ -11,31 +11,20 @@ def get_num_people():
 
 def get_all_courses(n):
     all_course_list = []
+    db = defaultdict()
     for i in range(n):
         courses = input('Enter courses: ').split()
-        all_course_list.append(organize(i+1, courses))
-    return all_course_list
-
-
-def organize(n, course_list):
-    organizer = defaultdict()
-    for course in course_list:
-        if n not in organizer:
-            organizer[n] = [course]
-        else:
-            organizer[n].append(course)
-    return dict(organizer)
-
-
-def get_similarity(l):
-    for person in l:
-        return
+        for course in courses:
+            if course not in db:
+                db[course] = [i]
+            else:
+                db[course].append(i)
+    return dict(db)
 
 
 def run():
     num_people = get_num_people()
     master_list = get_all_courses(num_people)
-    get_similarity(master_list)
 
 if __name__ == '__main__':
     run()

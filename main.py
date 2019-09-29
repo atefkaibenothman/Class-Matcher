@@ -24,7 +24,10 @@ def get_all_courses(n):
 
 def run():
     num_people = get_num_people()
-    master_list = get_all_courses(num_people)
+   master_list = get_all_courses(num_people)
+
+
+
 
 if __name__ == '__main__':
     run()

@@ -1,10 +1,9 @@
 # class-matcher
 
-Person 1: cs141, ics46, ics139w
+### Creates a graph showing the similarity of courses between any number of people.
 
-Person 2: cs 141, math2b, writing39b
-
-Person 3: ics46, math2b, pysch7a, cs141
-
-
-Result: Person 1 + 2: cs141 Person 1 + 3: ics46, cs141 Person 2 + 3: math2b, cs141
+#### Steps:
+1. Ask each person for a list of their courses
+2. Iterate through each course and check if it is in the database.
+3. If the course is in the db, add the person to the corresponding course. If not, add the course to the database and add the person to the corresponding course.
+4. Iterate through the database and create graph.

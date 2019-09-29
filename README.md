@@ -1,4 +1,4 @@
-# class-matcher
+# Class-Matcher
 
 ### Creates a graph showing the similarity of courses between any number of people.
 

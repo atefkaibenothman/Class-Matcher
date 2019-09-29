@@ -2,6 +2,12 @@
 
 ### Creates a graph showing the similarity of courses between any number of people.
 
+#### Tools:
+1. PrettyTable
+```
+sudo pip3 install PTable
+```
+
 #### Steps:
 1. Ask each person for a list of their courses
 2. Iterate through each course and check if it is in the database.
